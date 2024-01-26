@@ -2387,8 +2387,7 @@ Class.taureonBoss = {
     }]
 };
 
-Class.zephiMiscDeco = makeDeco(4, "white")
-Class.zephiMiscDeco2 = makeDeco(4, "black")
+Class.zephiMiscDeco = makeDeco(4, "black")
 Class.zephiSunchip = makeAuto({
     PARENT: "drone",
     SHAPE: 4,
@@ -2461,18 +2460,6 @@ Class.zephiBoss = {
     UPGRADE_COLOR: "lightGreen",
     SIZE: 50,
     VALUE: 5e6,
-    SKILL: skillSet({
-        rld: 1,
-        dam: 1,
-        pen: 1,
-        str: 1,
-        spd: 1,
-        atk: 1,
-        hlt: 1,
-        shi: 1,
-        rgn: 1,
-        mob: 1,
-    }),
     BODY: {
         FOV: 0.75,
         SPEED: 0.05 * base.SPEED,
@@ -2535,10 +2522,10 @@ Class.zephiBoss = {
         TYPE: "overdriveDeco"
     },{
         POSITION: [20 * Math.SQRT1_2 ** 2, 0, 0, 0, 0, 1],
-        TYPE: "zephiMiscDeco2"
+        TYPE: "zephiMiscDeco"
     },{
         POSITION: [20 * Math.SQRT1_2 ** 3, 0, 0, 45, 0, 1],
-        TYPE: "zephiMiscDeco"
+        TYPE: "shinySquare"
     }]
 };
 
@@ -3317,8 +3304,7 @@ Class.frostBoss = {
     NAME: 'Frostbyte',
     FACING_TYPE: 'toTarget',
     SHAPE: 6,
-    COLOR: "teal",
-    UPGRADE_COLOR: "teal",
+    COLOR: 'teal',
     SIZE: 31,
 	DANGER: 12,
     VALUE: 888888,
