@@ -246,7 +246,8 @@ window.onload = async () => {
     util.retrieveFromLocalStorage("autoLevelUp");
     // Set default theme
     if (document.getElementById("optColors").value === "") {
-        document.getElementById("optColors").value = "normal";
+        document.getElementById("optColors").value = "custom";
+        document.getElementById("optCustom").value = "Qmx1ZWxpZ2h0AEZyb3N0eQCzJrzHCcN84YZr1shcnqDb45a7wMTTqp+e3t7eJiksWJPfesJbxEpMzqg2g4W+yW3KjoWZcm9vFB4y/6Cg";
     }
     if (document.getElementById("optBorders").value === "") {
         document.getElementById("optBorders").value = "normal";
