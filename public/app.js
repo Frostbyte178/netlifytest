@@ -131,7 +131,7 @@ function getMockups() {
     });
 }
 window.onload = async () => {
-    window.serverAdd = "wide-foamy-cross.glitch.me/";
+    window.serverAdd = (await (await fetch("/serverData.json")).json()).ip;
     if (Array.isArray(window.serverAdd)) {
         window.isMultiserver = true;
         const servers = window.serverAdd;
